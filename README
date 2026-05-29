@@ -2,21 +2,107 @@
 
 Learn Authentication from Beginner to Production.
 
-## Topics Covered
+---
 
-- Express Basics
-- REST API Basics
-- Authentication Fundamentals
-- Input Validation
-- Password Hashing
-- JWT Authentication
-- Protected Routes
-- Role Based Access Control
-- Refresh Tokens
-- MongoDB Authentication
-- PostgreSQL Authentication
-- Docker Deployment
+## 📋 Prerequisites
 
-## Status
+* Basic understanding of JavaScript
+* Node.js installed on your machine
 
-🚧 Currently under development.
+If you don't have Node.js installed, download it from:
+https://nodejs.org/en/download/
+
+---
+
+## 🚀 Before Starting
+
+Remember one thing:
+
+**Don't worry if you don't understand every term immediately.**
+
+You will gradually understand concepts such as:
+
+* Express
+* Middleware
+* Authentication
+* JWT
+* Authorization
+* Refresh Tokens
+
+Just focus on understanding the ideas and following the examples.
+
+---
+
+## 🗺️ How This Roadmap Is Designed
+
+* 20% Theory
+* 30% Diagrams
+* 40% Code
+* 10% Practice
+
+The goal is to learn by understanding and building, not by memorizing.
+
+---
+
+## 📚 How To Use This Roadmap
+
+### 1. Read the Theory
+
+Understand the core concepts.
+
+📁 `README.md`
+
+### 2. Study the Diagrams
+
+Visualize how everything works.
+
+📁 `diagrams/`
+
+### 3. Explore the Code
+
+See concepts implemented in real examples.
+
+📁 `code/`
+
+### 4. Complete the Practice Tasks
+
+Test your understanding.
+
+📁 `practice/`
+
+---
+
+## ⏱ Recommended Learning Flow
+
+* 5 minutes reading
+* 2 minutes studying diagrams
+* 5 minutes understanding code
+* 5 minutes solving practice tasks
+
+Total: ~15-20 minutes per chapter
+
+---
+
+## 📖 Topics Covered
+
+* Express Basics
+* REST API Basics
+* Authentication Fundamentals
+* Authentication API
+* Input Validation
+* Password Hashing
+* JWT Authentication
+* Protected Routes
+* Role Based Access Control (RBAC)
+* Refresh Tokens
+* MongoDB Authentication
+* PostgreSQL Authentication
+* Docker Deployment
+
+---
+
+## 🚧 Status
+
+Currently under development.
+
+New chapters will be added regularly.
