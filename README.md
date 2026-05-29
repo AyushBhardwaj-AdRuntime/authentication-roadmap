@@ -210,9 +210,9 @@ Help beginners understand authentication from scratch and learn how authenticati
 - [Getting Started](#quick-start)
 - [What you'll learn](#what-youll-learn)
 - [Modules (roadmap)](#modules-roadmap)
-- [Prerequisites](#-prerequisites)
-- [Repository structure](#-repository-structure)
-- [Progress tracker](#-progress-tracker)
+- [Prerequisites](#prerequisites)
+- [Repository structure](#repository-structure)
+- [Progress tracker](#progress-tracker)
 - [Contributing](#contributing)
 
 ---
@@ -254,6 +254,7 @@ cd authentication-roadmap
 
 ---
 
+<a id="prerequisites"></a>
 ## 📋 Prerequisites
 
 - Basic JavaScript knowledge
@@ -263,6 +264,7 @@ https://nodejs.org/en/download/
 
 ---
 
+<a id="repository-structure"></a>
 ## 📂 Repository structure
 
 ```text
@@ -293,6 +295,7 @@ Each chapter: 15–20 minutes (read → diagram → code → practice).
 
 ---
 
+<a id="progress-tracker"></a>
 ## 📈 Progress tracker
 
 - [ ] Express Basics
@@ -311,6 +314,7 @@ Each chapter: 15–20 minutes (read → diagram → code → practice).
 
 ---
 
+<a id="contributing"></a>
 ## Contributing
 
 Contributions welcome — please read `CONTRIBUTING.md` and pick an issue.
