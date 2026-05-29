@@ -1,0 +1,22 @@
+# Authentication Roadmap
+
+Learn Authentication from Beginner to Production.
+
+## Topics Covered
+
+- Express Basics
+- REST API Basics
+- Authentication Fundamentals
+- Input Validation
+- Password Hashing
+- JWT Authentication
+- Protected Routes
+- Role Based Access Control
+- Refresh Tokens
+- MongoDB Authentication
+- PostgreSQL Authentication
+- Docker Deployment
+
+## Status
+
+🚧 Currently under development.
