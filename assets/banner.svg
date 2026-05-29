@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0ea5a4" />
+      <stop offset="1" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#g)" rx="12"/>
+  <g font-family="Segoe UI, Roboto, Arial, sans-serif" fill="#fff">
+    <text x="60" y="120" font-size="48" font-weight="700">Authentication Roadmap</text>
+    <text x="60" y="170" font-size="20" opacity="0.95">Learn authentication from basics to production: JWT, OAuth2, WebAuthn, and deployment.</text>
+  </g>
+</svg>
