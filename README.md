@@ -1,16 +1,20 @@
-      From Beginner to Production
+   <img src="assets/banner.svg" alt="Authentication Roadmap banner" style="max-width:100%;border-radius:8px;" />
 
-## 📚 Table of Contents
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/AyushBhardwaj-AdRuntime/authentication-roadmap?style=social)](https://github.com/AyushBhardwaj-AdRuntime/authentication-roadmap/stargazers) [![Issues](https://img.shields.io/github/issues/AyushBhardwaj-AdRuntime/authentication-roadmap)](https://github.com/AyushBhardwaj-AdRuntime/authentication-roadmap/issues)
 
-* [Prerequisites](#-prerequisites)
-* [Before Starting](#-before-starting)
-* [How This Roadmap Is Designed](#️-how-this-roadmap-is-designed)
-* [How To Use This Roadmap](#-how-to-use-this-roadmap)
-* [Repository Structure](#-repository-structure)
-* [Learning Flow](#-recommended-learning-flow)
-* [Topics Covered](#-topics-covered)
-* [Progress Tracker](#-progress-tracker)
-* [Status](#-status)
+   # Authentication Roadmap
+
+   > Learn authentication from basics to production: secure logins, JWTs, OAuth2, WebAuthn, and deployment.
+
+   ## 📚 Table of Contents
+
+   - [Quick start](#quick-start)
+   - [What you'll learn](#what-youll-learn)
+   - [Modules (roadmap)](#modules-roadmap)
+   - [Prerequisites](#prerequisites)
+   - [Repository structure](#repository-structure)
+   - [Progress tracker](#progress-tracker)
+   - [Contributing](#contributing)
 
 ---
 
@@ -195,25 +199,7 @@ Help beginners understand authentication from scratch and learn how authenticati
 
 ---
 
-<img src="assets/banner.svg" alt="Authentication Roadmap banner" style="max-width:100%;border-radius:8px;" />
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/AyushBhardwaj-AdRuntime/authentication-roadmap?style=social)](https://github.com/AyushBhardwaj-AdRuntime/authentication-roadmap/stargazers) [![Issues](https://img.shields.io/github/issues/AyushBhardwaj-AdRuntime/authentication-roadmap)](https://github.com/AyushBhardwaj-AdRuntime/authentication-roadmap/issues) [![Build](https://img.shields.io/badge/build-setup-lightgrey.svg)]()
-
-# Authentication Roadmap
-
-> Learn authentication from basics to production: secure logins, JWTs, OAuth2, WebAuthn, and deployment.
-
-> Beginner → Intermediate → Advanced
-
-## Quick links
-
-- [Getting Started](#quick-start)
-- [What you'll learn](#what-youll-learn)
-- [Modules (roadmap)](#modules-roadmap)
-- [Prerequisites](#prerequisites)
-- [Repository structure](#repository-structure)
-- [Progress tracker](#progress-tracker)
-- [Contributing](#contributing)
 
 ---
 
