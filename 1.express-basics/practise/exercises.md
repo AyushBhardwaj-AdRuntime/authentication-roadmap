@@ -1,12 +1,9 @@
 # Practice Exercises
 
-1. Add a `/about` route that returns your name.
-2. Change the `/greet` route message to something more friendly.
+1. Change the home message in `server.js`.
+2. Add a `/greet` route that says hello.
 
 ## Challenge
 
-Try adding a JSON route called `/status` that returns:
+Try adding a `/about` route that returns your name.
 
-```json
-{ "ready": true }
-```

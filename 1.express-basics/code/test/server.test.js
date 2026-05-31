@@ -40,15 +40,3 @@ test("GET / returns the welcome message", async () => {
   assert.strictEqual(response.status, 200);
   assert.strictEqual(response.body, "Welcome to Express Basics");
 });
-
-test("GET /greet returns a friendly message", async () => {
-  const response = await request("/greet");
-  assert.strictEqual(response.status, 200);
-  assert.strictEqual(response.body, "Hello from Express Basics");
-});
-
-test("GET /health returns ok", async () => {
-  const response = await request("/health");
-  assert.strictEqual(response.status, 200);
-  assert.strictEqual(response.body, '{"status":"ok"}');
-});
