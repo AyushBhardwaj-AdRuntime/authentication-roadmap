@@ -2,12 +2,27 @@
 
 This is the first chapter. The goal is simple: understand one tiny Express server.
 
+## Copy, paste, run
+
+```bash
+cd 1.express-basics/code
+npm install
+npm test
+npm start
+```
+
+Then open `http://localhost:3000` in your browser.
+
 ## What you will learn
 
 - What Express is
 - How to run a server
 - How one route works
 - Where to see the result in the browser
+
+## You will build
+
+You will build one tiny Express app that shows a welcome message on the home page.
 
 ## How to use the `code/` folder
 
@@ -57,6 +72,18 @@ module.exports = app;
 - `module` is the current file
 - `module.exports` lets other files use this app
 - `app.listen()` starts the server
+
+## Tiny glossary
+
+- `PORT` is the number your server listens on
+- `req` is what the browser sends
+- `res` is what the server sends back
+- `route` is the path like `/`
+- `server` is the running app
+
+## Why this matters
+
+This chapter should feel easy. You learn one small thing first, then the next chapters can grow step by step.
 
 ## Practice
 
