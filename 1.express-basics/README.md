@@ -1,48 +1,45 @@
 # Express Basics
 
-This chapter is a very small introduction to Express.js.
+Your first Express chapter. Small, simple, and beginner-friendly.
 
 ## What you will learn
 
 - What Express is
-- How to create a simple server
-- How to show a response in the browser
+- How to start a server
+- How to add a route
+- How to send a response
+
+## Start here
+
+1. Open `code/`
+2. Run `npm install`
+3. Run `npm test`
+4. Run `npm start`
+
+## What this chapter includes
+
+- `code/server.js` - tiny Express app
+- `code/test/server.test.js` - one basic test
+- `diagrams/flow.svg` - simple request flow
+- `practise/exercises.md` - two small exercises
 
 ## Why Express?
 
-Express helps you build web apps and APIs with less code.
+Express helps you build APIs and web apps with less code.
 
-## Quick setup
+## Tiny app preview
 
-```bash
-npm init -y
-npm install express
-node index.js
-```
-
-## Simple example
-
-
-const express = require("express");
-
-const app = express();
-const PORT = 3000;
-
+```javascript
 app.get("/", (req, res) => {
     res.send("Welcome to Express Basics");
 });
-
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
-
+```
 
 ## Practice
 
-- Make a `/greet` route
-- Change the response message
-- Run the server and open `http://localhost:3000`
+- Add a `/greet` route
+- Change the home message
 
 ## Next chapter
 
-REST API and Postman    
+REST API and Postman

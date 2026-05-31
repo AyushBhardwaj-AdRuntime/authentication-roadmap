@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <rect width="900" height="180" rx="16" fill="#0f172a"/>
+  <g fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    <text x="40" y="55" font-size="26" font-weight="700">Express basics flow</text>
+    <text x="40" y="105">Browser → Express server → Route handler → Response</text>
+  </g>
+  <g stroke="#38bdf8" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M70 125 H220"/>
+    <path d="M270 125 H420"/>
+    <path d="M470 125 H620"/>
+    <path d="M670 125 H820"/>
+  </g>
+</svg>
