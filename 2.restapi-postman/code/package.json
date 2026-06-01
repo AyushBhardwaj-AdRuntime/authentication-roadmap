@@ -1,0 +1,12 @@
+{
+  "name": "restapi-postman-demo",
+  "version": "1.0.0",
+  "description": "Small REST API demo for learning HTTP methods",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

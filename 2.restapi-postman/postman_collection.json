@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "restapi-postman-demo",
+    "name": "REST API Basics - demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/items"
+      }
+    },
+    {
+      "name": "Create item",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"my item\" }"
+        },
+        "url": "http://localhost:3000/items"
+      }
+    },
+    {
+      "name": "Get item",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3000/items/1"
+      }
+    },
+    {
+      "name": "Update item",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"updated name\" }"
+        },
+        "url": "http://localhost:3000/items/1"
+      }
+    },
+    {
+      "name": "Delete item",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3000/items/1"
+      }
+    }
+  ]
+}

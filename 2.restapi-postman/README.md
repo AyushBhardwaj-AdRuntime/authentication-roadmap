@@ -14,6 +14,8 @@ npm start
 
 Open Postman and import the provided collection (if any) or use the curl examples below.
 
+This module includes a tiny demo server under `code/`. Import `postman_collection.json` from this folder into Postman to run the example requests.
+
 ## What you will learn
 
 - HTTP methods and status codes used in auth flows (GET, POST, 200, 401)
@@ -45,6 +47,18 @@ curl http://localhost:3000/profile \
 2. If there is a `package.json`, run `npm install` then `npm start`.
 3. Use the curl examples above or import the Postman collection (if present).
 4. Use a Postman environment to store tokens and reuse them across requests.
+
+## Demo server (what's included)
+
+`code/server.js` implements a minimal items API:
+
+- `GET /items` — list items
+- `POST /items` — create an item (JSON body: { "name": "..." })
+- `GET /items/:id` — fetch one item
+- `PUT /items/:id` — update an item
+- `DELETE /items/:id` — delete an item
+
+After `npm start` the terminal will show the URL; use that URL in Postman or curl.
 
 ## Postman tips (quick)
 
