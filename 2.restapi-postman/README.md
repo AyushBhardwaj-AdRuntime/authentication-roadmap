@@ -50,13 +50,15 @@ curl http://localhost:3000/profile \
 
 ## Demo server (what's included)
 
-`code/server.js` implements a minimal items API:
+`code/server.js` implements stateless demo endpoints that return simple messages.
 
-- `GET /items` — list items
-- `POST /items` — create an item (JSON body: { "name": "..." })
-- `GET /items/:id` — fetch one item
-- `PUT /items/:id` — update an item
-- `DELETE /items/:id` — delete an item
+- `GET /items` — returns { message: 'GET /items called' }
+- `POST /items` — returns a 201 with a creation message
+- `GET /items/:id` — returns { message: 'GET /items/:id called' }
+- `PUT /items/:id` — returns an update message
+- `DELETE /items/:id` — returns a delete message
+
+This keeps the demo focused: learners can try each HTTP method and see the expected response without worrying about data storage.
 
 After `npm start` the terminal will show the URL; use that URL in Postman or curl.
 

@@ -4,50 +4,31 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Simple in-memory store
-let items = [];
-let nextId = 1;
+// Stateless demo endpoints: return simple messages per HTTP method.
 
-// GET /items - list all items
+// GET /items - list (stateless demo)
 app.get('/items', (req, res) => {
-  res.json(items);
+  res.json({ message: 'GET /items called' });
 });
 
-// GET /items/:id - get single item
+// GET /items/:id - get single item (stateless demo)
 app.get('/items/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const item = items.find(i => i.id === id);
-  if (!item) return res.status(404).json({ error: 'Not found' });
-  res.json(item);
+  res.json({ message: `GET /items/${req.params.id} called` });
 });
 
-// POST /items - create an item
+// POST /items - create (stateless demo)
 app.post('/items', (req, res) => {
-  const { name } = req.body;
-  if (!name) return res.status(400).json({ error: 'Missing name' });
-  const item = { id: nextId++, name };
-  items.push(item);
-  res.status(201).json(item);
+  res.status(201).json({ message: 'POST /items called — item created (demo)' });
 });
 
-// PUT /items/:id - update an item
+// PUT /items/:id - update (stateless demo)
 app.put('/items/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const { name } = req.body;
-  const item = items.find(i => i.id === id);
-  if (!item) return res.status(404).json({ error: 'Not found' });
-  if (!name) return res.status(400).json({ error: 'Missing name' });
-  item.name = name;
-  res.json(item);
+  res.json({ message: `PUT /items/${req.params.id} called — item updated (demo)` });
 });
 
-// DELETE /items/:id - remove an item
+// DELETE /items/:id - delete (stateless demo)
 app.delete('/items/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const idx = items.findIndex(i => i.id === id);
-  if (idx === -1) return res.status(404).json({ error: 'Not found' });
-  const [deleted] = items.splice(idx, 1);
-  res.json(deleted);
+  res.json({ message: `DELETE /items/${req.params.id} called — item deleted (demo)` });
 });
 
 if (require.main === module) {
