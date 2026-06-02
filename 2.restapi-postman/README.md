@@ -1,6 +1,6 @@
 # REST API + Postman
 
-Short, practical guide to testing authentication flows using REST requests and Postman.
+Beginner-friendly guide to learning REST basics with Postman, plus a few advanced toppings for extra practice.
 
 ## Copy, paste, run
 
@@ -12,36 +12,35 @@ npm install
 npm start
 ```
 
-Open Postman and import the provided collection (if any) or use the curl examples below.
+Open Postman and import the provided collection or use the curl examples below.
 
 This module includes a tiny demo server under `code/`. Import `postman_collection.json` from this folder into Postman to run the example requests.
 
 ## What you will learn
 
-- HTTP methods and status codes used in auth flows (GET, POST, 200, 401)
+- What REST is and how `GET`, `POST`, `PUT`, and `DELETE` work
 - How to send JSON requests and read JSON responses
-- How to use headers for Authorization (Bearer tokens)
-- Creating and running Postman requests and collections
-- Writing simple Postman tests and using environments
+- How to use Postman to test an API step by step
+- How to write simple Postman tests and save values in an environment
+- A few advanced toppings like headers, query params, and response checks
 
 ## Quick examples (curl)
 
-POST a login (replace URL):
+POST a new item (replace URL):
 
 ```bash
-curl -X POST http://localhost:3000/login \
+curl -X POST http://localhost:3000/items \
 	-H "Content-Type: application/json" \
-	-d '{"username":"alice","password":"secret"}'
+	-d '{"name":"My first item"}'
 ```
 
-GET a protected resource with a bearer token:
+GET a single item:
 
 ```bash
-curl http://localhost:3000/profile \
-	-H "Authorization: Bearer <ACCESS_TOKEN>"
+curl http://localhost:3000/items/1
 ```
 
-## How to use the `codes/` folder
+## How to use the `code/` folder
 
 1. Open `2.restapi-postman/code` — this is where runnable examples live.
 2. If there is a `package.json`, run `npm install` then `npm start`.
@@ -52,9 +51,9 @@ curl http://localhost:3000/profile \
 
 `code/server.js` implements stateless demo endpoints that return simple messages.
 
-- `GET /items` — returns { message: 'GET /items called' }
+- `GET /items` — returns a simple message for the list route
 - `POST /items` — returns a 201 with a creation message
-- `GET /items/:id` — returns { message: 'GET /items/:id called' }
+- `GET /items/:id` — returns a simple message for one item
 - `PUT /items/:id` — returns an update message
 - `DELETE /items/:id` — returns a delete message
 
@@ -62,23 +61,30 @@ This keeps the demo focused: learners can try each HTTP method and see the expec
 
 After `npm start` the terminal will show the URL; use that URL in Postman or curl.
 
+## Learn in order
+
+1. Read the lesson and look at the routes in `code/server.js`.
+2. Open Postman and send `GET /items` first.
+3. Try `GET /items/1`, `POST /items`, `PUT /items/1`, and `DELETE /items/1`.
+4. Move to the practice file in `practise/exercises.md`.
+
 ## Postman tips (quick)
 
-- Use `Collections` to group related requests (login, refresh, protected).
+- Use `Collections` to group related requests (list, create, update, delete).
 - Use `Tests` (under the request) to assert response status and save tokens:
 
 ```javascript
-// example Postman test to save token
+// example Postman test to check a successful create request
 pm.test("status is 200", () => pm.response.to.have.status(200));
 const json = pm.response.json();
-pm.environment.set("accessToken", json.token);
+pm.expect(json.message).to.include("created");
 ```
 
 ## Practice
 
-- Create a `POST /login` request that accepts JSON credentials and returns a token.
-- In Postman, save the token to an environment variable and use it for `GET /profile`.
-- Add a test that fails when status is not 200.
+- Open `practise/exercises.md` and complete the beginner tasks first.
+- After that, try the advanced topping tasks in the same file.
+- Add your own request descriptions in Postman so you remember what each one does.
 
 ## Next chapter
 

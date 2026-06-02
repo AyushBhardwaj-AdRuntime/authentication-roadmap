@@ -1,20 +1,35 @@
 {
   "info": {
     "_postman_id": "restapi-postman-demo",
-    "name": "REST API Basics - demo",
+    "name": "REST API Basics - beginner practice",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "List items",
+      "name": "1. List items",
+      "description": "Start here. This is the easiest way to confirm the server is running.",
       "request": {
         "method": "GET",
         "header": [],
         "url": "http://localhost:3000/items"
-      }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
     },
     {
-      "name": "Create item",
+      "name": "2. Create item",
+      "description": "Send JSON data to create a new item.",
       "request": {
         "method": "POST",
         "header": [
@@ -25,18 +40,49 @@
           "raw": "{ \"name\": \"my item\" }"
         },
         "url": "http://localhost:3000/items"
-      }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 201', function () {",
+              "  pm.response.to.have.status(201);",
+              "});",
+              "pm.test('response says created', function () {",
+              "  pm.expect(pm.response.json().message).to.include('created');",
+              "});"
+            ]
+          }
+        }
+      ]
     },
     {
-      "name": "Get item",
+      "name": "3. Get item",
+      "description": "Read a single item by id.",
       "request": {
         "method": "GET",
         "header": [],
         "url": "http://localhost:3000/items/1"
-      }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
     },
     {
-      "name": "Update item",
+      "name": "4. Update item",
+      "description": "Change the item with a PUT request.",
       "request": {
         "method": "PUT",
         "header": [
@@ -47,15 +93,42 @@
           "raw": "{ \"name\": \"updated name\" }"
         },
         "url": "http://localhost:3000/items/1"
-      }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
     },
     {
-      "name": "Delete item",
+      "name": "5. Delete item",
+      "description": "Remove the item after you finish practicing.",
       "request": {
         "method": "DELETE",
         "header": [],
         "url": "http://localhost:3000/items/1"
-      }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('status is 200', function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
