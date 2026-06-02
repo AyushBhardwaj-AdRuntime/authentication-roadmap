@@ -2,6 +2,8 @@
 
 Beginner-friendly guide to learning REST basics with Postman, plus a few advanced toppings for extra practice.
 
+If you are completely new, start with [START_HERE.md](START_HERE.md) first.
+
 ## Copy, paste, run
 
 ```bash
@@ -46,6 +48,10 @@ curl http://localhost:3000/items/1
 2. If there is a `package.json`, run `npm install` then `npm start`.
 3. Use the curl examples above or import the Postman collection (if present).
 4. Use a Postman environment to store tokens and reuse them across requests.
+
+## Postman guide
+
+If you want a simple step-by-step walkthrough for this folder, read [POSTMAN_GUIDE.md](POSTMAN_GUIDE.md).
 
 ## Demo server (what's included)
 
